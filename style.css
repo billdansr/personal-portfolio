@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'UbuntuMono Nerd Font';
+    src: url(UbuntuMonoNerdFont-Regular.ttf) format('truetype');
+}
+
+body {
+    font-family: 'UbuntuMono Nerd Font', sans-serif;
+    background-color: #080808;
+    color: #9c9c9c;
+    font-size: 14pt;
+}
+
+nav {
+    background-color: #1b1b1b;
+    margin: 0px 85px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 95px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.nav-links a {
+    color: #9c9c9c;
+    text-decoration: none;
+}
+
+.nav-socials {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+main {
+    padding: 140px 180px;
+}
+
+main#home {
+    display: flex;
+    gap: 120px;
+}
+
+main h1, main h2 {
+    font-family: 'Raleway';
+    color: #fff;
+    font-weight: 900;
+}
+
+main#home h1 {
+    font-size: 44pt;
+}
+
+main#testimonials h1 {
+    font-size: 34pt;
+}
+
+main#testimonials h1,
+main#testimonials p,
+main#get-in-touch h1,
+main#get-in-touch p {
+    text-align: center;
+}
+
+img#profile-picture, .endorser > img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.endorser {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    font-family: 'Raleway';
+    font-size: 18pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+main#testimonials header {
+    margin-bottom: 60px;
+}
+
+main#testimonials article {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #9c9c9c, #080808) 1 stretch;
+    padding: 35px;
+    position: relative;
+}
+
+main#testimonials tr td:nth-child(1) > article{
+    margin-right: 70px;
+}
+
+main#testimonials tr:nth-child(1) article,
+main#testimonials tr:nth-child(2) article{
+    margin-bottom: 65px;
+}
+
+.badge {
+    font-family: 'Raleway';
+    font-size: 100pt;
+    color: white;
+    position: absolute;
+    top: -45px;
+    right: 360px;
+
+}
+
+main#get-in-touch form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+label {
+    color: #fff;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-top: 5px;
+    width: 350px;
+    border-radius: 4px;
+}
+
+input {
+    height: 40px;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'IBM Plex Mono';
+    padding: 15px;
+}
+
+input[type="submit"] {
+    background-color: #3F8E00;
+    color: #fff;
+    border: 2px solid #62BA1B;
+    border-radius: 4px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
