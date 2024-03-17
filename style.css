@@ -3,6 +3,10 @@
     src: url(UbuntuMonoNerdFont-Regular.ttf) format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'UbuntuMono Nerd Font', sans-serif;
     background-color: #080808;
@@ -64,7 +68,9 @@ main#testimonials h1 {
 main#testimonials h1,
 main#testimonials p,
 main#get-in-touch h1,
-main#get-in-touch p {
+main#get-in-touch p,
+main#profile h1,
+main#profile p {
     text-align: center;
 }
 
@@ -129,19 +135,22 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input[type="text"], input[type="email"], textarea {
+    padding-left: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="submit"], textarea {
     margin-top: 5px;
-    width: 350px;
+    width: 350px ;
     border-radius: 4px;
 }
 
-input {
+input[type="text"], input[type="email"], input[type="submit"] {
     height: 40px;
 }
 
 input::placeholder, textarea::placeholder {
     font-family: 'IBM Plex Mono';
-    padding: 15px;
 }
 
 input[type="submit"] {
@@ -150,6 +159,23 @@ input[type="submit"] {
     border: 2px solid #62BA1B;
     border-radius: 4px;
     font-size: 14pt;
+    font-weight: bold;
+}
+
+legend {
+    color: #fff;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    padding: 25px;
+    text-align: center;
+}
+
+th {
+    color: #fff;
     font-weight: bold;
 }
 

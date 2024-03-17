@@ -19,10 +19,11 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="get-in-touch.html">Get In Touch</a></li>
+                <li><a href="profile.html">Profile</a></li>
             </menu>
             <ul class="nav-socials">
-                <li><a href="https://www.linkedin.com/in/billdansatriana/" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="linkedin"></a></li>
-                <li><a href="https://www.github.com/billdansr" target="_blank" rel="noopener"><img src="assets/github.svg" alt="linkedin"></a></li>
+                <li><a href="https://www.linkedin.com/in/billdansatriana/" target="_blank" rel="noopener"><img src="assets/linkedin.svg" alt="linkedin" height="20px"></a></li>
+                <li><a href="https://www.github.com/billdansr" target="_blank" rel="noopener"><img src="assets/github.svg" alt="linkedin" height="20px"></a></li>
             </ul>
         </nav>
     </header>
@@ -32,6 +33,52 @@
             <p>Have a question, project idea, or just want to say hello? I'd love to hear from you! Feel free to reach out using the contact form below or connect with me on social media. 📫</p>
         </header>
         <form action="#">
+            <div>
+                <fieldset>
+                    <legend>
+                        Choose your side
+                    </legend>
+                    <div>
+                        <input type="radio" name="side" id="dark-side">
+                        <label for="dark-side">Dark Side</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="side" id="light-side">
+                        <label for="light-side">Light Side</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>
+                        Major
+                    </legend>
+                    <select name="major" id="major">
+                        <option value="" selected disabled>Choose your major</option>
+                        <option value="software-engineering">Software Engineering</option>
+                        <option value="computer-engineering">Computer Engineering</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="electrical-engineering">Information System</option>
+                        <option value="electrical-engineering">Informatics</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>
+                        Programming Language
+                    </legend>
+                    <input type="checkbox" name="language" id="c">
+                    <label for="c">C/C++</label>
+                    <input type="checkbox" name="language" id="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" name="language" id="python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="language" id="javscript">
+                    <label for="javscript">JavaScript</label>
+                </fieldset>
+            </div>
             <div>
                 <label for="email">Email</label>
                 <br>
