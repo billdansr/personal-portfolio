@@ -14,7 +14,7 @@ body {
     font-size: 14pt;
 }
 
-nav {
+.navbar {
     background-color: #1b1b1b;
     margin: 0px 85px;
     border-bottom-left-radius: 10px;
@@ -34,6 +34,14 @@ nav {
 .nav-links a {
     color: #9c9c9c;
     text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-shadow: 0 0 10px hsl(0, 0%, 100%);
+}
+
+.nav-links a[aria-current="page"] {
+    color: #fff;
 }
 
 .nav-socials {
@@ -162,12 +170,13 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-legend {
-    color: #fff;
+legend label {
+    font-size: 14pt;
     font-weight: bold;
+    color: #fff;
 }
 
-table, th, td {
+main#profile table, main#profile th, main#profile td {
     border: 1px solid #fff;
     border-collapse: collapse;
     padding: 25px;
